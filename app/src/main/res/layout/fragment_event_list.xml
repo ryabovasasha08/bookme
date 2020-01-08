@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screen.event_list.EventListFragment">
+
+    <com.provectus_it.bookme.ui.custom_view.HideableMaterialButton
+        android:id="@+id/previousEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/show_previous_events"
+        app:icon="@drawable/ic_arrow_upward_24px"
+        android:visibility="gone"
+        app:iconGravity="textStart" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layout_behavior=".util.behavior.HideableMaterialScrollingButtonBehavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BookMe</string>
+    <string name="tv">TV</string>
+    <string name="booked_by">Booked by %s %s</string>
+    <string name="room_list">Room List</string>
+    <string name="book_interval">%s-%s</string>
+    <string name="free">Free</string>
+    <string name="busy">Busy</string>
+    <string name="until">until %s</string>
+    <string name="free_until">Free until </string>
+    <string name="busy_until">Busy until </string>
+    <string name="time_left">(%sh %sm left)</string>
+    <string name="default_value">Default</string>
+    <string name="add_meeting">Add Meeting</string>
+    <string name="countdown_message">Are you still here?</string>
+    <string name="presence_button_message" formatted="true">I\'m here</string>
+    <string name="countdown_text">%sm %ss</string>
+    <string name="schedule">%s\'s schedule</string>
+    <string name="countdown_less_than_hour">%sm %ss</string>
+    <string name="countdown_more_than_hour">%sh %sm</string>
+    <string name="book_now">Book now</string>
+    <string name="confirmation">Do you want to book %s from %s to %s?</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="room">Room</string>
+    <string name="set_time_from">Set time from</string>
+    <string name="set_time_to">Set time to</string>
+    <string name="available_rooms">Available rooms</string>
+    <string name="there_are_no_rooms">There are no rooms available.\nPlease try to pick some other time.</string>
+    <string name="oops_message">Oops! &#x1f61f;</string>
+    <string name="this_room_is_booked">This room is busy for this time</string>
+    <string name="something_went_wrong">Something went wrong. Please try again later.</string>
+    <string name="select_popular_duration">Select popular duration</string>
+    <string name="you_are_not_allowed_to_leave_the_app">You are not allowed to leave the app</string>
+    <string name="show_previous_events">Show Previous Events</string>
+    <string name="hide_previous_events">Hide Previous Events</string>
+    <string name="meeting_added">Meeting added</string>
+    <string name="checked_out_from_the_meeting">Checked out from the meeting</string>
+    <string name="undo">undo</string>
+    <string name="check_in">Check-in</string>
+    <string name="check_out">Check-out</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "264389252837",
+    "firebase_url": "https://bookme-be833.firebaseio.com",
+    "project_id": "bookme-be833",
+    "storage_bucket": "bookme-be833.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264389252837:android:b036f500c529d82d",
+        "android_client_info": {
+          "package_name": "com.provectus_it.bookme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264389252837-i0i31hbbojj6psg1gsjlsp3m7d4m5soj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcUh5H_gjXH7mnYi3VgkCbe0KhsECNzqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264389252837-i0i31hbbojj6psg1gsjlsp3m7d4m5soj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "264389252837-onufre5un4fh5a2ac7vih9b9q6tpr82p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "provectus.bookme"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

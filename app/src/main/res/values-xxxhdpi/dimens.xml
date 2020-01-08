@@ -1,0 +1,17 @@
+<resources>
+	<dimen name="start_fragment_state_text_size">216sp</dimen>
+	<dimen name="start_fragment_until_text_size">72sp</dimen>
+	<dimen name="start_fragment_state_countdown_height">339dp</dimen>
+	<dimen name="start_fragment_state_countdown_width">339dp</dimen>
+	<dimen name="start_fragment_state_margin_start">96dp</dimen>
+	<dimen name="start_fragment_book_now_text_size">48sp</dimen>
+	<dimen name="start_fragment_state_margin_top">96dp</dimen>
+	<dimen name="start_fragment_duration_material_button_height">96dp</dimen>
+	<dimen name="start_fragment_duration_material_button_width">246dp</dimen>
+	<dimen name="duration_material_button_text_size">48sp</dimen>
+	<dimen name="checkin_checkout_material_button_text_size">48sp</dimen>
+	<dimen name="start_fragment_room_info_text_size">48sp</dimen>
+	<dimen name="start_fragment_checkin_checkout_material_button_width">552dp</dimen>
+	<dimen name="start_fragment_checkin_checkout_material_button_height">120dp</dimen>
+	<dimen name="start_fragment_checkin_checkout_material_button_margin_top">96dp</dimen>
+</resources>

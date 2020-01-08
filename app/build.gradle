@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'hu.supercluster.paperwork'
+
+paperwork {
+    set = [
+            gitSha   : gitSha(),
+            buildDate: buildTime("dd-MM-yyyy HH:00:00 z", "UTC"),
+    ]
+}
+
+android {
+    compileSdkVersion versions.compileSdk
+
+    def keystorePropertiesFile = file("keystore.properties")
+    def keystoreProperties = new Properties()
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+    defaultConfig {
+        applicationId "com.provectus_it.bookme"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode versions.code
+        versionName versions.name + "." + versions.build
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            versionNameSuffix '-d'
+            signingConfig signingConfigs.release
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    lintOptions {
+        disable 'ContentDescription'
+    }
+
+}
+
+dependencies {
+    implementation libraries.kotlin
+
+    implementation libraries.appCompat
+    implementation libraries.coreKtx
+
+    implementation libraries.koin
+    implementation libraries.koinScope
+
+    implementation libraries.moxyCore
+    implementation libraries.moxyAndorid
+    kapt libraries.moxyCompiler
+
+    implementation libraries.room
+    kapt libraries.roomCompiler
+    implementation libraries.roomRxJava
+
+    implementation libraries.preferenceRoom
+    annotationProcessor libraries.preferenceRoomAnnotations
+    kapt libraries.preferenceRoomKapt
+
+    implementation libraries.okHttp
+
+    implementation libraries.workRuntime
+
+    implementation libraries.rxAndroid
+    implementation libraries.rxJava
+
+    implementation libraries.retrofit
+    implementation libraries.retrofitGsonConverter
+    implementation libraries.retrofitRxJavaAdapter
+
+    implementation libraries.scarlet
+    implementation libraries.scarletOkHttp
+    implementation libraries.scarletRxJava
+    implementation libraries.scarletGson
+
+    implementation libraries.gson
+
+    implementation libraries.firebaseCore
+
+    implementation libraries.materialDesign
+
+    implementation libraries.dateTimePicker
+
+    implementation libraries.blurry
+
+    implementation libraries.constraintLayout
+    implementation libraries.drawerlayout
+
+    implementation libraries.okHttpLoggingInterceptor
+    implementation libraries.crashlytics
+    implementation libraries.stetho
+    implementation libraries.stethoOkHttp
+    implementation libraries.timber
+    implementation libraries.leakCanary
+    implementation libraries.paperwork
+    implementation libraries.rxJavaDebug
+    implementation libraries.threeTenAbp
+    implementation libraries.amplitude
+}

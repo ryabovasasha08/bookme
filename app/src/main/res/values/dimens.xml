@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="card_view_corner_radius">2dp</dimen>
+    <dimen name="card_view_elevation">2dp</dimen>
+
+    <dimen name="list_item_min_height">250dp</dimen>
+    <dimen name="list_item_image_height">150dp</dimen>
+    <dimen name="list_item_title_text_size">24sp</dimen>
+    <dimen name="list_item_vertical_space_between_items">4dp</dimen>
+
+    <dimen name="start_fragment_state_text_size">72sp</dimen>
+    <dimen name="start_fragment_until_text_size">24sp</dimen>
+    <dimen name="start_fragment_state_countdown_width">113dp</dimen>
+    <dimen name="start_fragment_state_countdown_height">113dp</dimen>
+    <dimen name="start_fragment_state_margin_start">32dp</dimen>
+    <dimen name="start_fragment_state_margin_top">32dp</dimen>
+    <dimen name="start_fragment_duration_material_button_width">82dp</dimen>
+    <dimen name="start_fragment_duration_material_button_height">32dp</dimen>
+    <dimen name="start_fragment_room_info_text_size">16sp</dimen>
+    <dimen name="start_fragment_book_now_text_size">16sp</dimen>
+    <dimen name="start_fragment_checkin_checkout_material_button_width">184dp</dimen>
+    <dimen name="start_fragment_checkin_checkout_material_button_height">40dp</dimen>
+    <dimen name="start_fragment_checkin_checkout_material_button_margin_top">48dp</dimen>
+    <dimen name="checkin_checkout_material_button_text_size">16sp</dimen>
+
+    <dimen name="duration_material_button_text_size">16sp</dimen>
+    <dimen name="app_toolbar_elevation">10dp</dimen>
+    <item name="dim_amount" format="float" type="dimen">0.5</item>
+</resources>

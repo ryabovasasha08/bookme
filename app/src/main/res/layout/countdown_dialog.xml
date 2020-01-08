@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/countdown_message"
+        android:textColor="@android:color/white"
+        android:textSize="48sp" />
+
+    <com.provectus_it.bookme.ui.custom_view.CountdownView
+        android:id="@+id/countdown"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        custom:progressDrawable="@drawable/countdown_thin_circle_shape" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/userPresenceMaterialButton"
+        android:layout_width="240dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/presence_button_message"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:backgroundTint="@color/mariner"
+        app:cornerRadius="40dp"
+        app:rippleColor="@android:color/black" />
+
+</LinearLayout>

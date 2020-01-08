@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mariner">#2871d8</color>
+    <color name="cobalt">#0047a6</color>
+    <color name="black">#353535</color>
+    <color name="wild_sand">#F4F4F4</color>
+    <color name="zircon">#F1F7FF</color>
+    <color name="tropical_blue">#D0E1FA</color>
+    <color name="royal_blue">#4181E2</color>
+    <color name="green_haze">#009B6A</color>
+    <color name="dove_gray">#676767</color>
+    <color name="red">#ED0000</color>
+    <color name="tundora">#404040</color>
+    <color name="mine_shaft">#353535</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    <color name="aqua_deep">#004D35</color>
+    <color name="raw_umber">#7E5A14</color>
+    <color name="my_sin">#FBB429</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="three_quarters_transparent_black">#40000000</color>
+</resources>
